@@ -1,12 +1,15 @@
+// サーバー起動時に必要な処理
 package main
 
 import (
-	"fmt"
 	"goapi/controller"
 	"net/http"
 	"strings"
 )
 
+/*
+/rental/*のエンドポイント、コントローラーを選択する
+*/
 func RentalEntries(w http.ResponseWriter, r *http.Request) {
 	/* TODO: 複数のパスに対応させる*/
 	path := strings.Split(r.URL.Path, "/")[2]

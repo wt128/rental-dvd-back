@@ -8,6 +8,10 @@ import (
 	"net/http"
 )
 
+/*
+	俳優の一覧を10件取得する
+	@param pages uint
+*/
 func actorAll(w http.ResponseWriter, r *http.Request) {
 	db := infrastructure.Db
 	actors := []structs.Actor{}

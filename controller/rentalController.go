@@ -8,6 +8,10 @@ import (
 	"net/http"
 )
 
+/*
+	俳優の一覧を10件取得する
+	   pages uint
+*/
 func RentalAll(w http.ResponseWriter, r *http.Request) {
 	db := infrastructure.Db
 	rentals := []structs.Rental{}
